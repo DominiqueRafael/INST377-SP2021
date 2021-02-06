@@ -20,12 +20,14 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
-  color: #e70707;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 700;
+  color: #000000;
 }
 
 p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 400;
   color: #2a2a2a;
 }
 
