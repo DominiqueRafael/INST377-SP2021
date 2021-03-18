@@ -1,2 +1,133 @@
-/* Add some css styles based on the tutorial at javascript.info: introduction to browser events
- https://javascript.info/introduction-browser-events */
+/* || General setup */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 10px;
+}
+  
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #eba9ff;
+}
+  
+  /* || typography */
+  
+h1, h2, h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #000000;
+}
+  
+p, input, li {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #2a2a2a;
+}
+  
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 100;
+}
+  
+  /* || header layout */
+  
+.header {
+    margin-bottom: 1px;
+    display: flex;
+    flex-flow: row wrap;
+}
+  
+body > * {
+    padding: 1%;
+}
+  
+.slider {
+    padding-top: 1px;
+    padding-bottom: 16.12px;
+    padding-left: 440px;
+    padding-right: 16.12px;
+}
+
+.item {
+    padding-top: 1px;
+    padding-bottom: 16.12px;
+    padding-right: 16.12px;
+}
+  
+h1 {
+    flex: 5;
+    text-transform: uppercase;
+}
+  
+  .item img {
+    display: block;
+    height: 125px;
+    padding-top: 16.12px;
+  }
+  
+  nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+  
+  nav a, nav span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  /* || main layout */
+  
+  .main {
+    display: flex;
+  }
+  
+  .article, .section {
+    flex: 4;
+  }
+  
+  .aside {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2;
+  }
+  
+  .aside a {
+    display: flex;
+    flex-basis: 50%;
+  }
+  
+  .aside img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+    margin-top: 10px;
+  }
