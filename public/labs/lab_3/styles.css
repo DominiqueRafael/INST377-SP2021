@@ -1,133 +1,37 @@
-/* || General setup */
+input {
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 9px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-  
-html {
-    font-size: 10px;
-}
-  
-body {
-    width: 70%;
-    min-width: 800px;
-    margin: 0 auto;
-    background-color: #eba9ff;
-}
-  
-  /* || typography */
-  
-h1, h2, h3 {
-    font-family: 'Roboto';
-    font-weight: 700;
-    color: #000000;
-}
-  
-p, input, li {
-    font-family: 'Roboto';
-    font-weight: 400;
-    color: #2a2a2a;
-}
-  
 h1 {
-    font-size: 4rem;
-    text-align: center;
-    font-weight: 100;
+  text-align: center;
+  font-family: "Roboto";
 }
-  
-  /* || header layout */
-  
-.header {
-    margin-bottom: 1px;
-    display: flex;
-    flex-flow: row wrap;
+
+html {
+  font-size: 20px;
 }
-  
-body > * {
-    padding: 1%;
-}
-  
-.slider {
-    padding-top: 1px;
-    padding-bottom: 16.12px;
-    padding-left: 440px;
-    padding-right: 16.12px;
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+  background-color: #eba9ff;
 }
 
 .item {
-    padding-top: 1px;
-    padding-bottom: 16.12px;
-    padding-right: 16.12px;
+  display: none;
 }
-  
-h1 {
-    flex: 5;
-    text-transform: uppercase;
+
+.slider {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-  
-  .item img {
-    display: block;
-    height: 125px;
-    padding-top: 16.12px;
-  }
-  
-  nav {
-    height: 50px;
-    flex: 100%;
-    display: flex;
-  }
-  
-  nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
-  }
-  
-  nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-  }
-  
-  nav a, nav span {
-    display: inline-block;
-    font-size: 2rem;
-    height: 3rem;
-    line-height: 1.7;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-  
-  }
-  
-  /* || main layout */
-  
-  .main {
-    display: flex;
-  }
-  
-  .article, .section {
-    flex: 4;
-  }
-  
-  .aside {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 2;
-  }
-  
-  .aside a {
-    display: flex;
-    flex-basis: 50%;
-  }
-  
-  .aside img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .footer {
-    margin-top: 10px;
-  }

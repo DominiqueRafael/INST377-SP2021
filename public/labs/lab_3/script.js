@@ -1,28 +1,29 @@
-/* Put your javascript in here */
+let curr = 1;
 
-let curr = 1
-showPics(curr);
-
-function showNext(curr) {
-    if (curr + 1 > curr.length) {
-        curr = 1
-    } else {
-        curr = curr + 1
-    }
+// next and previous
+function next(n) {
+    show(curr += n);
 }
 
-function showPrev(curr) {
-    if (curr - 1 == 0){
-        curr = curr.length
-    } else {
-        curr = curr - 1
-    }
+function showCurr(n) {
+    show(curr = n);
 }
 
-function showPics(curr) {
+function show(n) {
+    let i;
     let pics = document.getElementsByClassName("item");
-    for (let p of pics) {
-        p.style.display = "none";
+
+    if (n > pics.length) {
+        curr = 1;
     }
-    pics[curr - 1].style.display = "block";
+    if (n < 1) {
+        curr = pics.length;
+    }
+
+    for (i=0; i<pics.length; i++) {
+        pics[i].style.display = "none";
+    }
+    
+    pics[curr-1].style.display = "block";
+    
 }

@@ -1,8 +1,5 @@
-<!-- Write an index.html file -->
-<!-- Include your stylesheet in the head -->
-<!-- Include your script.js right before the </body> tag -->
-<!-- Make a carousel of four mochi images that cycle, based on the readings from javascript.info -->
 <!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>
@@ -37,8 +34,10 @@
             <div class="item">
                 <img src="roll_3.png" alt="roll#3" />
             </div>
-            <input id="prevButton" type="button" value="Prev" onclick="showPrev()" />
-            <input id="nextButton" type="button" value="Next" onclick="showNext()" />
+            <input id="prevButton" type="button" value="Prev" onclick="next(-1)"/>
+            <input id="nextButton" type="button" value="Next" onclick="next(1)"/>
         </div>
     </body>
 </html>
+
+
