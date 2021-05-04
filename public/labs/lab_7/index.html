@@ -10,4 +10,59 @@
     - TRY THIS: type "doc" at the top of this file and press "tab" for Emmet autocomplete support
 -->
 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dominique's Lab 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <link rel='stylesheet' href='style.css'/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  </head>
+  <body>
+    <!-- HEADINGS -->
+    <div class="columns">
+        <div class="column">
+            <div class="block">
+                <div class="head">
+                    <h1 class="title">Dominique's Lab 7</h1>
+                    <h2 class="subtitle">Zip Code Food Search</h2>
+                </div>
+            </div>
+            <!-- CONTENT -->
+            <div class="block">
+                <div class="searchBar">
+                    <form action="/api" method="post">
+                        <label for="search">Search</label>
+                        <input type="text" id="search" name="Search" />
+                    </form>
+                </div>
+            </div>
+            <!-- BOX -->
+            <div class="block">
+                <div class="box">
+                    <ul class="suggestions"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- MAP -->
+            <div class="block">
+                <div id="mapid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
 
