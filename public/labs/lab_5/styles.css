@@ -1,3 +1,31 @@
-#mapid { 
-    height: 500px; 
+#mapid {
+  height: 500px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.card {
+  padding: 5%;
+  outline-style: solid;
+  outline-color: rgb(0, 0, 0);
+  outline-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.address {
+    font-size: 15px;
+    color: rgb(46, 39, 145);
+    font-weight: 300;
+}
+
+.box {
+    background-color: rgb(224, 249, 253);
 }
